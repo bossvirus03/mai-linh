@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="mailinh.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Tình iu của Lợi dành Cho Mai Linh</title>
+  </head>
+  <body class="bg-[#ffe9ef]">
+    <div class="container">
+      <div
+        class="relative flex items-center justify-center h-[100vh] flex-col p-5"
+      >
+        <div class="mb-12 flex items-center justify-center flex-col">
+          <div
+            class="image-meme max-w-[200px] md:max-w-[300px] rounded-lg shadow-md overflow-hidden"
+          ></div>
+          <h1 class="text-red-500 text-[27px] font-semibold mt-4 text-center">
+            Mai Linh có đồng í làm người iu của Lợi khum ???????
+          </h1>
+          <p class="sub-text text-center"></p>
+        </div>
+
+        <div class="flex gap-5">
+          <button
+            class="btn-res px-6 py-2 bg-[rgb(255,56,105)] text-white font-semibold rounded-lg shadow hover:bg-[#fa9ab2] transition duration-300"
+            onclick="openModal1()"
+          >
+            Đồng ý
+          </button>
+
+          <!-- Reject button -->
+          <button
+            class="btn-rej px-6 py-2 bg-[#5BBCFF] text-gray-700 font-semibold rounded-lg shadow hover:bg-[#80caff] hover:text-white transition-all duration-500 absolute"
+            onclick="handleClickOrHoverRejectBtn()"
+          >
+            Từ Chối
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Modal -->
+    <div
+      id="modal1"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg flex justify-center items-center flex-col"
+      >
+        <h2 class="text-2xl font-semibold mb-4">
+          Lợi Cũng iu Mai Linh nhìu 😘😘
+        </h2>
+        <p class="mb-4">
+          Mình gặp nhau sớm nhé Lợi háo hức được gặp Mai Linh lắm rùi 😍
+        </p>
+
+        <button
+          class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+          onclick="closeModalAndOpenSecond()"
+        >
+          Iu Lợi rất nhìu 😍
+        </button>
+      </div>
+    </div>
+
+    <!-- Second Modal -->
+    <div
+      id="modal2"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden p-5"
+    >
+      <div
+        class="bg-white p-8 rounded-lg shadow-lg flex flex-col justify-center items-center"
+      >
+        <h2 class="text-2xl font-semibold mb-4">
+          Mai Linh đòi cưới Lợi luôn ấy gì. Lợi đã chuẩn bị hết rùi hehe !!
+        </h2>
+        <p class="mb-4">
+          Đây nhe giấy đăng kí kết hôn đây. Iu nhau đến đầu bạc răng long nhé
+        </p>
+        <div class="max-w-[350px]">
+          <img
+            class="w-full"
+            src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/457383617_8276985259053504_2097320839673298384_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFRDT32zTLjIeV3XUSPrfASMTiAqWz1PJcxOICpbPU8l4U7J2IZTBYE5rNHJLJjUS3z4fAXXU6M30I0l2MB2_We&_nc_ohc=rJkKcJQ9k58Q7kNvgF0eCao&_nc_ht=scontent.fhan14-1.fna&_nc_gid=A3sWLY4FZalK9DRr42tJ3YC&oh=03_Q7cD1QGBtOAxEN0LW4_PhjWcf23MtSFuQBg_9ETtINSXmWw_ZQ&oe=671C844F"
+            alt=""
+          />
+        </div>
+        <button
+          class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          onclick="closeModal2()"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
